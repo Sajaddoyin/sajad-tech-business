@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web page</title>  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--home page-->
+  <section>
+    <div class="home">
+      <div class="first">
+        <div class="hamburger">
+          &#9776;
+       </div>
+       <nav class="navbar">
+        <div class="logo">Tech-plug <img src="Tech logo.jpg"></div>
+          <ul>
+           <li><a href="">Home</a></li>
+           <li><a href="">About Us</a></li>
+           <li><a href="">Review</a></li>
+           <li><a href="">Order</a></li> 
+          </ul>
+        </div>
+       </nav>
+         <div class="welcome">
+          <h1>Welcome to our official Tech-plug page.</h1>
+          <h2>Tech Home</h2>
+            <button class="btn">Customer Care</button>
+            <button class="btn">Contact US</button>
+       </div>
+      </div>
+    </div>
+  </section>
+  <section class="info">
+    <center>
+     <h1 class="head-text">OUR SERVICES</h1>
+     <h3>Technology Will Be The Future Of Advertising</h3>
+    </center>
+    <div class="courses">
+      <div class="cards">
+        <div class="solar__intallation">
+     <div class="card__header">
+            <img src="Untitled-design-2021-08-18T120552.419.png" alt="">
+          </div>
+          <p class="card__lead">
+            <h2>Solar Installation</h2>
+            <button class="btn-small">Apply</button>  
+          </p> 
+        </div>
+      </div>
+      <div class="cards">
+        <div class="solar__intallation">
+          <div class="card__header">
+            <img src="in-person-web-development-certification-programs-can-be-useful.webp" alt="">
+          </div>
+          <p class="card__lead">
+            <h2>Web-development Training</h2>
+            <button class="btn-small">Apply</button>
+          </p>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="solar__intallation">
+          <div class="card__header">
+            <img src="upcoming-gadgets-2020.jpg" alt="">
+          </div>
+          <p class="card__lead">
+            <h2>Gadgets</h2>
+            <button class="btn-small">Shop</button>
+          </p>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="solar__intallation">
+          <div class="card__header">
+            <img src="cctv-installation-2.jpeg" alt="">
+          </div>
+          <p class="card__lead">
+            <h2>CCTV-Installation</h2>
+            <button class="btn-small">Apply</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hey">
+      <!-- <img src="cctv-installation-2.jpeg" alt=""> -->
+    </div>
+</div>
+  </section>
+  <section class="about us">
+    
+  </section>
+
+  <script>
+    const links = document.querySelector("ul");
+    const hamburger = document.querySelector(".hamburger");
+
+    hamburger.addEventListener("click", function() {
+      if (links.classList.contains
+      ("show")){
+        links.classList.remove("show")
+      } else{
+        links.classlist.add("show")
+        console.log("done")
+      } 
+    } 
+    );
+  </script>
+</body>
+</html>
