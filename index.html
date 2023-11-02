@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web page</title>  
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
   <!--home page-->
@@ -25,7 +26,6 @@
        </nav>
          <div class="welcome">
           <h1>Welcome to our officials Tech-plug page.</h1>
-          <h2>Tech Home</h2>
             <button class="btn">Customer Care</button>
             <button class="btn">Contact US</button>
        </div>
@@ -92,7 +92,16 @@
   <section class="about us">
     
   </section>
+  <script type="text/javascript">
+    const welcome = document.querySelector ('.welcome');
 
+    const header = document.createElement ('h2');
+
+    const headerContent = document.createTextNode('Tech-home.',);
+   header.appendChild(headerContent);
+
+   welcome.appendChild(header);
+  </script>
   <script>
     const links = document.querySelector("ul");
     const hamburger = document.querySelector(".hamburger");
