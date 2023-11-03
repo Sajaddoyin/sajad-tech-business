@@ -12,6 +12,7 @@ html{
    scroll-behavior: smooth;
    overflow-x: hidden;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -21,6 +22,7 @@ html{
     height: 40px;
     border-radius: 10px;
 }
+
 .navbar{
     font-family: Arial, Helvetica, sans-serif;
     justify-content: space-between;
@@ -35,26 +37,29 @@ ul{
 }
 
 .show{
-    display: flex;
+    display: block;
+    background-color: black;
+}
+
+
+.show li{
+    display: block;
+    margin-top: 4px;
+    padding: 1px;
+    color: aqua;
+    background-color: black;
 }
 
 .hamburger{
     position: absolute;
     top: 0;
     display: none;
-    right: 0;
+    right: 5px;
     font-size: 2em;
     margin: 0.2em;
     color:  rgb(253, 182, 3);
 }
-@media screen and (max-width: 768px) {
-    ul{
-        display: none;
-    }
-    .hamburger{
-       display: flex;
-    }
-}
+
 
 .welcome{
    text-align: center;
@@ -63,9 +68,21 @@ ul{
    color: rgb(247, 248, 250);
    font-style: italic;
    justify-content: center;
-   margin-top: 14%;
-   transition: all 60s;
+   margin-top: 3em;
 }
+
+@media screen and (max-width: 768px) {
+    ul{
+        display: none;
+    }
+    .hamburger{
+       display: flex;
+    }
+    .welcome{
+        margin-top: 6em;
+    }
+}
+
 /* nav{
     display: flex;
     padding-right: 5px;
@@ -195,7 +212,7 @@ center{
     width: 100%;
     box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 1);
 } */
-@keyframes sajad{
+/* @keyframes sajad{
     0%{
         transform: translateY(o);
     }
@@ -208,7 +225,7 @@ center{
     100%{
         transform: translateY(0);
     }
-}
+} */
 /* .solar__installation{
     text-align: center;
     box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 1);
@@ -279,4 +296,11 @@ center{
 }
 .content{
     padding: 0 45px;
+}
+.end{
+    display: flex;
+    background-color: #cfcecc;
+}
+.buttom{
+    display: flex;
 }
