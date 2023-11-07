@@ -35,7 +35,9 @@ ul{
     list-style: none;
     margin: 15px 15px;
 }
-
+ul img{
+    width: 35px;
+}
 .show{
     display: block;
     background-color: black;
@@ -296,6 +298,7 @@ center{
 }
 .content{
     padding: 0 45px;
+   
 }
 .end{
     display: flex;
@@ -303,4 +306,8 @@ center{
 }
 .buttom{
     display: flex;
+}
+.contact{
+    padding: 5 60px;
+    
 }
